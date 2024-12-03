@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Galeria de Imagens</title>
   <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+  <script defer src="script.js">
+
+darkModeToggle.addEventListener('click', toggleDarkMode);
+  </script>
 </head>
 <body>
   <header>
@@ -60,6 +63,7 @@
 
   <footer>
     <p>&copy; 2024 Grupo Exposição</p>
+    <button id="darkModeToggle">Modo Dark</button>
   </footer>
 </body>
 </html>

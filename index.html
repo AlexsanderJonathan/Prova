@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grupo Exposição</title>
   <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+  <script defer src="script.js">
+
+darkModeToggle.addEventListener('click', toggleDarkMode);
+  </script>
 </head>
 <body>
   <header>
@@ -21,26 +24,38 @@
   <main>
     <section>
       <h1>Nosso Grupo</h1>
-      <article>
-        <img src="images/Alexsander.jpg" alt="Foto Alexsander">
-        <h2>Alexsander Joanthan</h2>
-        <p>Competências: HTML, CSS, JS, SQL com MySQL, CMDs DML, PHP</p>
-        <p>Experiência: Cursando ADS, Desenvolvedor</p>
-        <img src="images/Isabela.jpg" alt="Foto Isabela">
-        <h2>Isabela Matos</h2>
-        <p>Competências: </p>
-        <p>Experiência: </p>
-        <img src="images/Jonata.jpg" alt="Foto Raul">
-        <h2>Raul Ferreira</h2>
-        <p>Competências: Flexibilidade, Negociação, Organização</p>
-        <p>Experiência: Vendedor Autônomo, Telemarketing</p>
-      </article>
-
+      <div class="galeria">
+        <article class="card">
+          <img src="images/Alexsander.jpg" alt="Foto Alexsander">
+          <h2>Alexsander Joanthan</h2>
+          <p>Competências: HTML, CSS, JS, SQL, CMDs DML, PHP.</p>
+          <p>Experiência: Vendedor, Marceneiro, Estágio em ADM.</p>
+          <p>Escolaridade: Cursando Superior em ADS.</p>
+        </article>
+        
+        <article class="card">
+          <img src="images/Isabela Matos.jpg" alt="Foto Isabela">
+          <h2>Isabela Matos</h2>
+          <p>Competências: Criativa, Determinada, Curiosa e Trabalha bem em equipe.</p>
+          <p>Experiência: Repositora, Almoxarife, Vendedora, Estagio em TI.</p>
+          <p>Escolaridade: Ensino Superior em ADS Imcompleto.</p>
+        </article>
+        
+        <article class="card">
+          <img src="images/Raul.jpg" alt="Foto Raul">
+          <h2>Raul Ferreira</h2>
+          <p>Competências: Flexibilidade, Negociação, Organização.</p>
+          <p>Experiência: Vendedor Autônomo, Telemarketing.</p>
+          <p>Escolaridade: Ensino Superior Imcompleto.</p>
+        </article>
+      </div>
     </section>
   </main>
+  
 
   <footer>
     <p>&copy; 2024 Grupo Exposição</p>
+        <button id="darkModeToggle">Modo Dark</button>
   </footer>
 </body>
 </html>
